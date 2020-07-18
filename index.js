@@ -4,9 +4,12 @@ const app = express();
 const mongoose = require('mongoose');
 require('dotenv/config');
 
-
+//route import
+const shipsRoute = require('./routes/ships');
+ 
 //middlewares
 // app.use('/route', routeMiddlewareCallback);
+app.use('/ships', shipsRoute);
 
 
 
